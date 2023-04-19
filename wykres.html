@@ -15,7 +15,7 @@
     }
     
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    /* .row.content {height: 450px} */
+    .row.content {height: 450px}
     
     /* Set gray background color and 100% height */
     .sidenav {
@@ -32,7 +32,7 @@
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen {
+    @media screen and (max-width: 767px) {
       .sidenav {
         height: auto;
         padding: 15px;
@@ -55,10 +55,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="wykres.html">Wykres</a></li>
+        <li class="active"><a href="wykres.html">Wykres</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign in</a></li>
@@ -70,42 +70,14 @@
 <div class="container-fluid text-center">  
   <div class="row content">
     <div class="col-sm-12 text-left"> 
-      <h1>Welcome to your management dashboard!</h1>
-      <p>Please sign in to proceed to your devices or sign up and get yourself a device :)</p>
-      <hr>
+      <h1>Tutaj będzie wykres</h1>
+      
       <!-- <p>Our venture offers many IoT devices such as weather stations, home alarm systems and so on.</p> -->
     </div>
     </div>
   </div>
 </div>
 
-<div class="container">
-    <h2>Sign up for free</h2>
-    <form action="/action_page.php">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
-          </div>
-          <div class="form-group">
-            <label for="sname">Surname:</label>
-            <input type="text" class="form-control" id="sname" placeholder="Enter your surname" name="sname">
-          </div>
-          <div class="form-group">
-            <label for="nick">Nickname:</label>
-            <input type="text" class="form-control" id="nick" placeholder="Enter your unique nickname" name="nick">
-          </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
-      </div>
-      <div class="form-group">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd" placeholder="Enter your password" name="pwd">
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-  </div>
-
-
 </body>
 </html>
+
