@@ -59,7 +59,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li class="active"><a href="wykres.html">Wykres</a></li>
+        <li class="active"><a href="wykres.html">Chart</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign in</a></li>
@@ -69,8 +69,16 @@
 </nav>
  
 <div class="container">
-    <canvas id="chart"></canvas>
+  <div>
+      <button id="btn-temperature">Temperature</button>
+      <button id="btn-humidity">Humidity</button>
+      <button id="btn-pressure">Pressure</button>
+  </div>
+  <canvas id="temperature" style="width: 50%; display: inline-block;"></canvas>
+  <canvas id="humidity" style="width: 50%; display: none;"></canvas>
+  <canvas id="pressure" style="width: 50%; display: none;"></canvas>
 </div>
+
 
 <script src="chartshow.js"></script>
 
