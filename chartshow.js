@@ -1,20 +1,20 @@
 
 
-let myChart = document.getElementById('myChart').getContext('2d');
+let chart = document.getElementById('chart').getContext('2d');
 
-let massPopChart= new Chart(myChart,{
-    type:'bar',
+let massPopChart= new Chart(chart,{
+    type:'line',
     data:{
-        labels:['X1','X2','X3','X4','X5','X6'],
+        labels:['6:00','9:00','12:00','15:00','18:00','21:00'],
         datasets:[{
-            label:'Dane1',
+            label:'Tempertura',
             data:[
-                1203,
-                1234,
-                5555,
-                14213,
-                123,
-                9944
+                12.5,
+                15,
+                16,
+                15.5,
+                13.5,
+                10
             ]
         }]
     },
